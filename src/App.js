@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './assets/scss/App.scss';
+import initInterceptor from './interceptor';
+import Header from './components/Header';
 
 function App() {
-  return (
-    <div className="App">
-    </div>
+  initInterceptor();
+  return (  
+    <Header></Header>
   );
 }
 
